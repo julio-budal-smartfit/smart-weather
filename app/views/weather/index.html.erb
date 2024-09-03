@@ -1,0 +1,36 @@
+<div class="bg-white p-8 rounded-lg shadow-lg mx-auto max-w-md w-full">
+  <h1 class="text-2xl font-bold text-gray-800 text-center mb-6">Temperatura Média em <%= @city %></h1>
+
+  <% if @response.any? %>
+    <ul class="space-y-4">
+      <li class="bg-blue-100 p-4 rounded-lg shadow-sm">
+        <span class="font-semibold text-blue-700">Temperatura:</span>
+        <span class="text-blue-700"><%= @response["temp"] %>F</span>
+      </li>
+
+            <li class="bg-blue-100 p-4 rounded-lg shadow-sm">
+        <span class="font-semibold text-blue-700">Sensação térmica:</span>
+        <span class="text-blue-700"><%= @response["feels_like"] %>F</span>
+      </li>
+
+      <li class="bg-blue-100 p-4 rounded-lg shadow-sm">
+        <span class="font-semibold text-blue-700">Min:</span>
+        <span class="text-blue-700"><%= @response["temp_min"] %>F</span>
+      </li>
+
+      <li class="bg-blue-100 p-4 rounded-lg shadow-sm">
+        <span class="font-semibold text-blue-700">Max:</span>
+        <span class="text-blue-700"><%= @response["temp_max"] %>F</span>
+      </li>
+    </ul>
+  <% else %>
+    <p class="text-center text-red-600">Não foi possível obter os dados de clima.</p>
+  <% end %>
+
+  <form action="/" method="get" class="mt-6 flex justify-center">
+    <input type="text" name="city" placeholder="Digite uma cidade" class="border border-gray-300 rounded-lg p-2 w-full focus:outline-none focus:border-blue-500">
+    <button type="submit" class="ml-4 bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600">
+      Consultar
+    </button>
+  </form>
+</div>
