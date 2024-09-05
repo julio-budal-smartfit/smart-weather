@@ -58,6 +58,7 @@ group :test do
   gem "selenium-webdriver"
   gem "rspec-rails"
   gem "webmock"
+  gem "rails-controller-testing"
 end
 
 gem "httparty"
