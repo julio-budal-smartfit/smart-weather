@@ -2,7 +2,7 @@
 Bem-vindo ao desafio de Back-End da Smartfit. Sua tarefa é refatorar uma funcionalidade existente, aplicando boas práticas de programação e seguindo as diretrizes descritas abaixo.
 
 ## Descrição do Projeto
-Atualmente, a Smartfit possui uma tela que exibe apenas a temperatura atual da região. O objetivo desta refatoração é ampliar essa funcionalidade para que a tela exiba a média de temperatura por hora para os próximos 5 dias.
+Atualmente, a Smartfit possui uma tela que exibe apenas a temperatura atual da região. O objetivo desta refatoração é ampliar essa funcionalidade para que a tela exiba a média de temperatura para os próximos 5 dias para a região.
 
 ### Regra de Negócio:
 A tela deve mostrar a média horária da temperatura para os próximos 5 dias, utilizando os dados fornecidos pela API.
@@ -30,7 +30,8 @@ Para configurar o ambiente de desenvolvimento, utilize o Docker. Abaixo, instru�
 2. Instale a extensão Dev Containers.
 3. O VS Code deve detectar automaticamente a configuração e sugerir a opção "Reopen in Container". Clique nesta opção. (Se não aparecer, use Ctrl + P e selecione "Rebuild and Reopen in Container".)
 4. O build do container será iniciado e o ambiente de desenvolvimento será configurado.
-5. Dentro do contêiner, execute bin/dev para iniciar o projeto.
+5. cp .env.sample .env
+6. Dentro do contêiner, execute bin/dev para iniciar o projeto.
 
 ## Considerações Finais
 
