@@ -5,7 +5,7 @@ Bem-vindo ao desafio de Back-End da Smartfit. Sua tarefa é refatorar uma funcio
 Atualmente, a Smartfit possui uma tela que exibe apenas a temperatura atual da região. O objetivo desta refatoração é ampliar essa funcionalidade para que a tela exiba a média de temperatura para os próximos 5 dias para a região.
 
 ### Regra de Negócio:
-A tela deve mostrar a média horária da temperatura para os próximos 5 dias, utilizando os dados fornecidos pela API.
+A tela deve mostrar a média da temperatura para os próximos 5 dias, utilizando os dados fornecidos pela API.
 Utilize a API do OpenWeather para buscar as informações necessárias. Se o token de API ainda não estiver disponível, você pode usar o exemplo de token no arquivo .env.sample.
 
 ### Critérios de Avaliação
@@ -27,7 +27,7 @@ Para configurar o ambiente de desenvolvimento, utilize o Docker. Abaixo, instru�
 ## Usando o VS Code:
 
 1. Abra o projeto no VS Code.
-2. Instale a extensão Dev Containers.
+2. Instale a extensão Dev Containers.tá osso, desde o 
 3. O VS Code deve detectar automaticamente a configuração e sugerir a opção "Reopen in Container". Clique nesta opção. (Se não aparecer, use Ctrl + P e selecione "Rebuild and Reopen in Container".)
 4. O build do container será iniciado e o ambiente de desenvolvimento será configurado.
 5. cp .env.sample .env
@@ -35,7 +35,7 @@ Para configurar o ambiente de desenvolvimento, utilize o Docker. Abaixo, instru�
 
 ## Considerações Finais
 
-- Atualmente, a tela mostra apenas a temperatura atual. A refatoração solicitada é para exibir a média de temperatura por hora para os próximos 5 dias.
+- Atualmente, a tela mostra apenas a temperatura atual. A refatoração solicitada é para exibir a média de temperatura para os próximos 5 dias.
 - Use a documentação da API para consulta.
 - Se precisar de ajuda, entre em contato.
 
